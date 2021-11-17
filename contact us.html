@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SCHOOL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        background-image: url('highschool4.jpg');
+        background-repeat: repeat-x;
+    }
+</style>
+
+
+<body>
+    <div class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kindergarten.html">Kindergarten</a></li>
+            <li><a href="primary.html">Primary</a></li>
+            <li><a href="highschool.html">Highchool</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </ul>
+        <br>
+    </div>
+
+    <img src="logo.webp" width="150" height="100">
+    <h4>Oceanic schools</h4>
+    <hr>
+    <h2>We would love to hear from you</h2>
+    <p>
+        Nick Sunday <br> nicksunday@oceanic.com
+        <br> <br> John Matt <br>johnmatt@oceanic.com <br><br>
+        <br> Max Ghetti <br>maxghetti@oceanic.com<br><br>
+
+    </p>
+    <?php
+<!-- define variables and set to empty values
+    $name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $website = test_input($_POST["website"]);
+  $comment = test_input($_POST["comment"]);
+  $gender = test_input($_POST["gender"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}-->
+
+        <h2>Sign up for our newsletter</h2>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?">
+            First Name: <input type="text" name="fname"><br><br>
+            Second Name: <input type="text" name="sname">
+            <br><br> E-mail: <input type="text" name="email">
+            <br><br> Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+            <br><br> Gender:
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="other">Other
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+        <!-- <?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender; -->
+                <br>
+                <footer>
+                    OCEANIC SCHOOLS | NAKURU, P.O.BOX 256-00300, KENYA | +254 (20) 867 2000
+
+                </footer>
+                <script src="main.js ">
+                </script>
+</body>
+
+</html>
